@@ -41,25 +41,40 @@
           <button class="header_button">Login</button>
         </div>
         <div class="wraper_mobile">
-        <div class="header_mobile">
-          <img class="logo" src="assets/svg/Vector.svg" alt="logo" />
-          <div class="header_mobile_burger">
-            <div class="burger_close">
-              <img class="burger_close_js" src="assets/svg/burger_close.svg" alt="close">
+          <div class="header_mobile">
+            <img class="logo" src="assets/svg/Vector.svg" alt="logo" />
+            <div class="header_mobile_burger">
+              <div class="burger_close">
+                <img
+                  class="burger_close_js"
+                  src="assets/svg/burger_close.svg"
+                  alt="close"
+                />
+              </div>
+              <ul class="header_mobile_menu">
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">How It Works</a>
+                </li>
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">Plan Your Trip</a>
+                </li>
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">Destinations</a>
+                </li>
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">Travel Stories</a>
+                </li>
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">Account</a>
+                </li>
+                <li class="header_mobile_item">
+                  <a class="header_mobile_link" href="">Social Media</a>
+                </li>
+              </ul>
             </div>
-            <ul class="header_mobile_menu">
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">How It Works</a></li>
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">Plan Your Trip</a></li>
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">Destinations</a></li>
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">Travel Stories</a></li>
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">Account</a></li>
-              <li class="header_mobile_item"><a class="header_mobile_link" href="">Social Media</a></li>
-            </ul>
-          </div>
-          <div class="header_burger">
+            <div class="header_burger"></div>
           </div>
         </div>
-      </div>
       </div>
     </header>
     <!-- ?header end -->
@@ -87,15 +102,19 @@
             <div class="steps_block1">
               <div class="steps_cube1">
                 <img
+                  class="steps_vector"
                   src="assets/svg/first_step.svg"
                   alt="Tell us what you want to do"
                 />
               </div>
-              <p class="cube_text">Tell us what you want to do</p>
+              <p class="cube_text cube_text_first">
+                Tell us what you want to do
+              </p>
             </div>
             <div class="steps_block2">
               <div class="steps_cube2">
                 <img
+                  class="steps_vector"
                   src="assets/svg/second_step.svg"
                   alt="Share us preferable dates"
                 />
@@ -105,11 +124,14 @@
             <div class="steps_block3">
               <div class="steps_cube3">
                 <img
+                  class="steps_vector"
                   src="assets/svg/third.svg"
                   alt="We will give you recommendations"
                 />
               </div>
-              <p class="cube_text">We will give you recommendations</p>
+              <p class="cube_text cube_text_third">
+                We will give you recommendations
+              </p>
             </div>
           </div>
         </div>
@@ -124,6 +146,13 @@
               <p class="des_cube_text">SPAIN</p>
             </div>
             <div class="des_cube2">
+              <div class="des_arrows_left">
+                <img src="assets/svg/arrows.svg" alt="arows_left" />
+              </div>
+              <div class="des_arrows_right">
+                <img src="assets/svg/arrows_2.svg" alt="arows_right" />
+              </div>
+
               <p class="des_cube_text">JAPAN</p>
             </div>
             <div class="des_cube3">
@@ -138,7 +167,11 @@
         </div>
         <div class="more">
           <button type="submit" class="findmore">
-            <img src="assets/svg/findmore.svg" alt="Find More" />Find More
+            <img
+              class="findmore_arrow"
+              src="assets/svg/findmore.svg"
+              alt="Find More"
+            />Find More
           </button>
         </div>
       </section>
@@ -159,10 +192,18 @@
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit...
+                    esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit
+                    a...
+                    <a class="read_more" href=" ">Read More</a>
+                  </p>
+                  <p class="story_subtitle_mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit
+                    a...
                     <a class="read_more" href=" ">Read More</a>
                   </p>
                 </div>
@@ -170,6 +211,11 @@
                   <img
                     class="foto_story"
                     src="assets/img/story1.jpg"
+                    alt="10 Photos of Attractive Thailand"
+                  />
+                  <img
+                    class="foto_story_mobile"
+                    src="assets/img/story1_mobile.jpg"
                     alt="10 Photos of Attractive Thailand"
                   />
                 </div>
@@ -189,11 +235,26 @@
                     amet, consectetur adipiscing elit...
                     <a class="read_more" href=" ">Read More</a>
                   </p>
+                  <p class="story_subtitle_mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit
+                    a...
+                    <a class="read_more" href=" ">Read More</a>
+                  </p>
                 </div>
                 <div class="foto_story_block">
                   <img
                     class="foto_story"
                     src="assets/img/story2.jpg"
+                    alt="10 Photos of Attractive Thailand"
+                  />
+                  <img
+                    class="foto_story_mobile"
+                    src="assets/img/story2_mobile.jpg"
                     alt="10 Photos of Attractive Thailand"
                   />
                 </div>
@@ -213,11 +274,26 @@
                     amet, consectetur adipiscing elit...
                     <a class="read_more" href=" ">Read More</a>
                   </p>
+                  <p class="story_subtitle_mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit
+                    a...
+                    <a class="read_more" href=" ">Read More</a>
+                  </p>
                 </div>
                 <div class="foto_story_block">
                   <img
                     class="foto_story"
                     src="assets/img/story3.jpg"
+                    alt="10 Photos of Attractive Thailand"
+                  />
+                  <img
+                    class="foto_story_mobile"
+                    src="assets/img/story3_mobile.jpg"
                     alt="10 Photos of Attractive Thailand"
                   />
                 </div>
@@ -237,11 +313,26 @@
                     amet, consectetur adipiscing elit...
                     <a class="read_more" href=" ">Read More</a>
                   </p>
+                  <p class="story_subtitle_mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit
+                    a... Read More
+                    <a class="read_more" href=" ">Read More</a>
+                  </p>
                 </div>
                 <div class="foto_story_block">
                   <img
                     class="foto_story"
                     src="assets/img/story4.jpg"
+                    alt="10 Photos of Attractive Thailand"
+                  />
+                  <img
+                    class="foto_story_mobile"
+                    src="assets/img/story4_mobile.jpg"
                     alt="10 Photos of Attractive Thailand"
                   />
                 </div>

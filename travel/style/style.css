@@ -203,6 +203,8 @@ body {
   background: url(../assets/svg/head_line.svg) no-repeat center,
     url(../assets/svg/head_line.svg) no-repeat center top,
     url(../assets/svg/head_line.svg) no-repeat center bottom;
+  margin-right: 4px;
+  margin-bottom: 3px;
 }
 /* ?header end */
 /* !main */
@@ -462,8 +464,17 @@ body {
   color: black;
   transition-duration: 1s;
 }
+.des_arrows_left {
+  display: none;
+}
+.des_arrows_right {
+  display: none;
+}
 /* ?DESTINATIONS end */
 /* ?stories start  */
+.foto_story_mobile {
+  display: none;
+}
 .stori_title {
   font-family: "Red Hat Text";
   font-style: normal;
@@ -510,6 +521,9 @@ body {
   line-height: 24px;
   margin: 0 auto;
   color: #0d606f;
+}
+.story_subtitle_mobile {
+  display: none;
 }
 .story_text_block4 {
   margin-bottom: 53px;
@@ -739,6 +753,7 @@ body {
     margin: -81px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 251px;
   }
   .burger_close {
     width: 15px;
@@ -764,6 +779,9 @@ body {
   .header_mobile_link {
     text-decoration: none;
     color: #ffffff;
+  }
+  .logo {
+    transform: translateY(2px);
   }
   .preview_title {
     display: none;
@@ -792,5 +810,182 @@ body {
     align-items: center;
     max-width: 360px;
     height: 48px;
+  }
+  .steps_to_treep {
+    display: block;
+  }
+  .steps_text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+  .steps_blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+  .steps_block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steps_cube1 {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .steps_block2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steps_block3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .steps_cube2 {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .steps_cube3 {
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .steps_vector {
+    width: 35px;
+    height: 100%;
+  }
+  .cube_text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .cube_text_first {
+    padding-right: 15px;
+    margin-left: 16px;
+    text-align: left;
+    width: 83px;
+  }
+  .cube_text_third {
+    text-align: right;
+    margin-right: 16px;
+    width: 80px;
+  }
+  .des_block {
+    margin-bottom: 10px;
+  }
+  .des_title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .des_cube1 {
+    display: none;
+  }
+  .des_cube3 {
+    display: none;
+  }
+  .des_cube2 {
+    background: url(../assets/img/spain_mobile.jpg) no-repeat center;
+    width: 100%;
+    height: 210px;
+  }
+  .des_cube_text {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 25px;
+  }
+  .circles {
+    gap: 8px;
+    margin-top: -50px;
+  }
+  .circle1 {
+    width: 8px;
+    height: 8px;
+    background: #f2785c;
+  }
+  .circle2 {
+    width: 8px;
+    height: 8px;
+    background: rgba(242, 120, 92, 0.5);
+  }
+  .circle3 {
+    width: 8px;
+    height: 8px;
+  }
+
+  .des_arrows_left {
+    display: block;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 7%;
+  }
+  .des_arrows_right {
+    display: block;
+    position: absolute;
+    margin-top: 100px;
+    right: 0;
+    margin-right: 7%;
+  }
+  .more {
+    width: 92px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .findmore {
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0;
+  }
+  .findmore_arrow {
+    width: 9px;
+    height: 6px;
+  }
+  .destinations {
+    margin-bottom: 20px;
+  }
+  .stori_title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  .foto_story {
+    display: none;
+  }
+  .foto_story_block {
+    margin: 10px 10px 15px 15px;
+  }
+  .foto_story_mobile {
+    display: block;
+    width: 155px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px #0d606f);
+    border-radius: 16px;
+  }
+  .story_title {
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .story_subtitle {
+    display: none;
+  }
+  .story_subtitle_mobile {
+    display: block;
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    color: #0d606f;
+    max-width: 195px;
+  }
+  .story {
+    flex-wrap: nowrap;
   }
 }
