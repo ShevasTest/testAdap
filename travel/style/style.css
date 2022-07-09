@@ -727,16 +727,19 @@ body {
   .header_wraper {
     display: none;
   }
+  .header {
+    background: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 25.1%);
+    background-size: 100% 259px;
+  }
   .wraper_mobile {
     display: block;
   }
   .header_mobile_burger {
     top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     width: 165px;
     height: 250px;
-
     background: #f2785c;
     box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
     border-radius: 10px;
@@ -811,6 +814,9 @@ body {
     max-width: 360px;
     height: 48px;
   }
+  .steps {
+    margin-bottom: 10px;
+  }
   .steps_to_treep {
     display: block;
   }
@@ -818,6 +824,7 @@ body {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 16px;
+    transform: translateY(-5px);
   }
   .steps_blocks {
     display: flex;
@@ -827,12 +834,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
   .steps_cube1 {
     margin: 0;
     padding: 0;
     width: 70px;
     height: 70px;
+    margin-left: -4px;
   }
   .steps_block2 {
     display: flex;
@@ -843,6 +852,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 0;
   }
   .steps_cube2 {
     margin: 0;
@@ -860,15 +870,19 @@ body {
     width: 35px;
     height: 100%;
   }
+  .steps_block3 .steps_vector {
+    width: 40px;
+  }
   .cube_text {
     font-size: 10px;
     line-height: 12px;
+    margin-top: 21px;
   }
   .cube_text_first {
     padding-right: 15px;
     margin-left: 16px;
     text-align: left;
-    width: 83px;
+    width: 89px;
   }
   .cube_text_third {
     text-align: right;
@@ -876,19 +890,20 @@ body {
     width: 80px;
   }
   .des_block {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .des_title {
     font-size: 14px;
     line-height: 19px;
+    margin-bottom: 20px;
   }
-  .des_cube1 {
+  .des_cube2 {
     display: none;
   }
   .des_cube3 {
     display: none;
   }
-  .des_cube2 {
+  .des_cube1 {
     background: url(../assets/img/spain_mobile.jpg) no-repeat center;
     width: 100%;
     height: 210px;
@@ -897,11 +912,12 @@ body {
     margin-top: 8px;
     font-size: 20px;
     line-height: 26px;
-    margin-left: 25px;
+    margin-left: 30px;
   }
   .circles {
-    gap: 8px;
-    margin-top: -50px;
+    gap: 6px;
+    margin-top: -33px;
+    margin-bottom: 23px;
   }
   .circle1 {
     width: 8px;
@@ -921,13 +937,13 @@ body {
   .des_arrows_left {
     display: block;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 92px;
     margin-left: 7%;
   }
   .des_arrows_right {
     display: block;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 92px;
     right: 0;
     margin-right: 7%;
   }
@@ -940,6 +956,7 @@ body {
     font-size: 11px;
     line-height: 15px;
     padding: 0;
+    gap: 6px;
   }
   .findmore_arrow {
     width: 9px;
@@ -957,20 +974,25 @@ body {
     display: none;
   }
   .foto_story_block {
-    margin: 10px 10px 15px 15px;
+    margin: 10px 10px 4px 0px;
   }
   .foto_story_mobile {
     display: block;
     width: 155px;
-    height: 140px;
+    height: 130px;
     filter: drop-shadow(0px 4px 4px #0d606f);
     border-radius: 16px;
   }
   .story_title {
+    font-family: "Aleo";
+    font-style: normal;
+    font-weight: 700;
     font-size: 11px;
     line-height: 13px;
+    color: #0d606f;
     margin-bottom: 10px;
     margin-top: 15px;
+    text-align: left;
   }
   .story_subtitle {
     display: none;
@@ -985,7 +1007,54 @@ body {
     color: #0d606f;
     max-width: 195px;
   }
+  .story_text_block4 {
+    margin-bottom: 0;
+  }
   .story {
     flex-wrap: nowrap;
+  }
+  .seemore {
+    position: absolute;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0;
+    gap: 6px;
+    margin-bottom: 0;
+    width: 92px;
+    height: 30px;
+    margin-top: 0;
+  }
+  .bg_stories1 {
+    background: url(../assets/img/bg_story1_mobile.jpg) no-repeat center;
+    background-size: 390px 693px;
+    padding-bottom: 66px;
+  }
+  .bg_stories2 {
+    padding-bottom: 12px;
+  }
+  .footer {
+    background: none;
+    margin-top: -52px;
+  }
+  .git_rss {
+    display: none;
+  }
+  .footer_text_flex {
+    display: none;
+    background: none;
+  }
+  .footer_list {
+    padding-top: 5px;
+  }
+  .footer_item2 {
+    transform: translateX(2px);
+  }
+  .footer_item3 {
+    transform: translateX(2px);
+  }
+}
+@media screen and (max-width: 334px) {
+  .bg_stories1 {
+    background-size: 390px 810px;
   }
 }
