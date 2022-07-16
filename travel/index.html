@@ -44,12 +44,9 @@
           <div class="header_mobile">
             <img class="logo" src="assets/svg/Vector.svg" alt="logo" />
             <div class="header_mobile_burger">
-              <div class="burger_close">
-                <img
-                  class="burger_close_js"
-                  src="assets/svg/burger_close.svg"
-                  alt="close"
-                />
+              <div class="burger_close_js">
+                <span class="burger_close_js_item1"></span>
+                <span class="burger_close_js_item2"></span>
               </div>
               <ul class="header_mobile_menu">
                 <li class="header_mobile_item">
@@ -82,7 +79,11 @@
                 </li>
               </ul>
             </div>
-            <div class="header_burger"></div>
+            <div class="header_burger">
+              <span class="header_burger_item"></span>
+              <span class="header_burger_item"></span>
+              <span class="header_burger_item"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -151,29 +152,28 @@
       <section id="id_destinations" class="destinations">
         <div class="des_block">
           <h2 class="des_title">POPULAR DESTINATIONS</h2>
-          <div class="des_cointainer">
-            <div class="des_cube1">
-              <div class="des_arrows_left">
-                <img src="assets/svg/arrows.svg" alt="arows_left" />
-              </div>
-              <div class="des_arrows_right">
-                <img src="assets/svg/arrows_2.svg" alt="arows_right" />
-              </div>
-              <p class="des_cube_text">SPAIN</p>
-            </div>
-            <div class="des_cube2">
-              <p class="des_cube_text">JAPAN</p>
-            </div>
-            <div class="des_cube3">
-              <p class="des_cube_text">USA</p>
-            </div>
-          </div>
-        </div>
-        <div class="circles">
-          <div class="circle1"></div>
-          <div class="circle2"></div>
-          <div class="circle3"></div>
-        </div>
+          <div class="ant-carousel">
+  <div class="ant-carousel-hider">
+    <ul class="ant-carousel-list">
+      <li class="ant-carousel-element"><img class="foto_slider" src="assets/img/spain.jpg" alt="1">
+        <p>Описание 0</p>
+      </li>
+      <li class="ant-carousel-element"><img class="foto_slider" src="assets/img/japan.jpg" alt="2">
+        <p>Описание 1</p> 
+      </li>
+      <li class="ant-carousel-element"><img class="foto_slider" src="assets/img/usa.jpg" alt="3">
+        <p>Описание 2</p>
+      </li>
+    </ul>
+  </div>
+  <div class="ant-carousel-arrow-left"> 
+    <span class="left_arow_mobile"></span>
+  <span class="left_arow_mobile"></span> 
+</div>
+  <div class="ant-carousel-arrow-right"><spanc class="right_arow_mobile"></spanc>
+    <span class="right_arow_mobile"></span>  </div>
+  <div class="ant-carousel-dots"></div>
+</div>
         <div class="more">
           <button type="submit" class="findmore">
             <img
