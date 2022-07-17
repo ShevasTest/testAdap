@@ -77,11 +77,9 @@ function Ant(crslId) {
 };
 
 Ant.defaults = {
-
-	// Default options for the carousel
 	elemVisible: 2, // Кол-во отображаемых элементов в карусели
 	loop: true,     // Бесконечное зацикливание карусели 
-	auto: true,     // Автоматическая прокрутка
+	auto: false,     // Автоматическая прокрутка
 	interval: 5000, // Интервал между прокруткой элементов (мс)
 	speed: 750,     // Скорость анимации (мс)
 	touch: true,    // Прокрутка  прикосновением
@@ -120,6 +118,7 @@ Ant.prototype.elemPrev = function(num) {
 		setTimeout(function() {
 			this$.crslList.style.cssText = 'transition:none;'
 		}, this.options.speed)
+		
 	}
 };
 
@@ -156,20 +155,20 @@ Ant.prototype.elemNext = function(num) {
 };
 
 Ant.prototype.dotOn = function(num) {
-	this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
+	this.indicatorDotsAll[num].style.cssText = 'background-color:rgba(242, 120, 92, 0.5); cursor:pointer;'
 };
 
 Ant.prototype.dotOff = function(num) {
-	this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
+	this.indicatorDotsAll[num].style.cssText = 'background-color:#F2785C; cursor:default;'
 };
 
 Ant.initialize = function(that) {
 
 	// Constants
-	that.elemCount = that.crslElements.length; // Количество элементов
+	that.elemCount = that.crslElements.length; // Кол-во элементов
 	that.dotsVisible = that.elemCount;         // Число видимых точек
 	let elemStyle = window.getComputedStyle(that.crslElemFirst);
-	that.elemWidth = that.crslElemFirst.offsetWidth +  // Ширина элемента (без margin)
+	that.elemWidth = that.crslElemFirst.offsetWidth +  // Ширина элемента без маргин
 	  parseInt(elemStyle.marginLeft) + parseInt(elemStyle.marginRight);
 
 	// Variables
@@ -251,6 +250,7 @@ Ant.initialize = function(that) {
 				bgTime = fnTime; that.elemNext()
 			}
 		}, false)
+		
 	}
 	else {
 		that.leftArrow.style.display = 'none';
@@ -285,3 +285,35 @@ Ant.initialize = function(that) {
 };
 
 new Ant();
+
+
+const btnLogin = document.querySelector(".header_button");
+const menuLogin = document.querySelector(".loginPop");
+const toggleMenuLogin = function () {
+    menuLogin.classList.toggle("loginPopActive");
+}
+	btnLogin.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleMenuLogin();
+});
+
+document.addEventListener("click", function (e) {
+    const target = e.target;
+    const its_menuLogin = target == menuLogin || menuLogin.contains(target);
+    const its_btnLogin = target == btnLogin;
+    const menuLogin_is_active = menuLogin.classList.contains("loginPopActive");
+
+    if (!its_menuLogin && !its_btnLogin && menuLogin_is_active) {
+        toggleMenuLogin();
+    }
+});
+
+const loginEmail = document.querySelector(".inputEmail");
+const loginPassword = document.querySelector(".inputPassword");
+const btnLoginAlert = document.querySelector(".buttonLogin");
+const EmailAlert = function () {
+	btnLoginAlert.addEventListener('click', (e) => {
+		alert(`Ваш логин: ${loginEmail.value} \nВаш пароль: ${loginPassword.value}`)
+	});
+};
+EmailAlert();
