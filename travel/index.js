@@ -326,3 +326,47 @@ const toggleMenuLoginAccount = function () {
     e.stopPropagation();
     toggleMenuLoginAccount();
 });
+
+const btnRegister = document.querySelector(".dontHaveRegisterRegister");
+const registerMenu = function () {
+	btnRegister.addEventListener('click', () => {
+		const registerPrev = document.querySelector(".loginPrev");
+		const registerFacebook = document.querySelector(".loginFacebook");
+		const registerGoogle = document.querySelector(".loginGoogle");
+		const registerOr = document.querySelector(".or");
+		const registerBtnLogin = document.querySelector(".buttonLogin");
+		const registerForgot = document.querySelector(".forgot");
+		const registerdontHaveRegister = document.querySelector(".dontHaveRegister");
+		const registerdontHaveRegisterRegister = document.querySelector(".dontHaveRegisterRegister");
+		const registerEmail = document.querySelector(".emailBlock");
+		registerFacebook.classList.toggle('hidden');
+		registerGoogle.classList.toggle('hidden');
+		registerOr.classList.toggle('hidden');
+		registerForgot.classList.toggle('hidden');
+		registerPrev.classList.toggle("loginPrevRegister");
+		registerBtnLogin.classList.toggle("emailBlockRegister");
+		if (registerPrev.innerHTML === "Log in to your account") {
+			registerPrev.innerHTML = "Create account";
+		  } else {
+			registerPrev.innerHTML = "Log in to your account";
+		  }
+		  if (registerBtnLogin.innerHTML === "Sign In") {
+			registerBtnLogin.innerHTML = "Sign Up";
+		  } else {
+			registerBtnLogin.innerHTML = "Sign In";
+		  }
+		  if (registerdontHaveRegister.innerHTML === "Don’t have an account?") {
+			registerdontHaveRegister.innerHTML = "Already have an account?";
+		  } else {
+			registerdontHaveRegister.innerHTML = "Don’t have an account?";
+		  }
+		  if (registerdontHaveRegisterRegister.innerHTML === "Register") {
+			registerdontHaveRegisterRegister.innerHTML = "Log in";
+		  } else {
+			registerdontHaveRegisterRegister.innerHTML = "Register";
+		  }
+		
+	});
+};
+registerMenu();
+

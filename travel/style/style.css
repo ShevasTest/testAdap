@@ -308,6 +308,7 @@ body {
   margin-bottom: 5.5%;
 }
 .loginFacebook {
+  display: block;
   width: 86%;
   height: 56px;
   background: #1877f2;
@@ -455,9 +456,12 @@ body {
   background: rgba(13, 96, 111, 0.5);
   margin-bottom: 20px;
 }
+.LoginTull {
+  display: flex;
+  margin-bottom: 5px;
+}
 .dontHaveRegister {
   margin-top: 0;
-  margin-bottom: 3%;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
@@ -468,7 +472,6 @@ body {
 }
 .dontHaveRegisterRegister {
   margin-top: 0;
-  margin-bottom: 5px;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
@@ -480,7 +483,21 @@ body {
   transform: translateY(0);
   transition-duration: 1s;
 }
+.hidden {
+  display: none;
+}
 /* ?LoginPopUp end */
+/*? registerPopUp start*/
+.loginPrevRegister {
+  margin-bottom: 22px;
+}
+.emailBlockRegister {
+  margin-bottom: 4%;
+}
+.buttonLoginRegister {
+  margin-bottom: 4%;
+}
+/*? registerPopUp end*/
 /* ?preview end  */
 /* ?steps start */
 
