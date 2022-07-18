@@ -317,3 +317,12 @@ const EmailAlert = function () {
 	});
 };
 EmailAlert();
+
+const btnAccount = document.querySelector(".account_login");
+const toggleMenuLoginAccount = function () {
+    menuLogin.classList.toggle("loginPopActive");
+}
+	btnAccount.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleMenuLoginAccount();
+});
